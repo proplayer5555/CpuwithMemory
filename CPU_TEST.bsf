@@ -1,0 +1,135 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 304 240)
+	(text "CPU_TEST" (rect 5 0 97 23)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 199 35 220)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DIN[15..0]" (rect 0 0 84 23)(font "Intel Clear" (font_size 8)))
+		(text "DIN[15..0]" (rect 21 27 105 50)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RUN" (rect 0 0 37 23)(font "Intel Clear" (font_size 8)))
+		(text "RUN" (rect 21 43 58 66)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Resetn" (rect 0 0 59 23)(font "Intel Clear" (font_size 8)))
+		(text "Resetn" (rect 21 59 80 82)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Clock" (rect 0 0 46 23)(font "Intel Clear" (font_size 8)))
+		(text "Clock" (rect 21 75 67 98)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "IREG[0..8]" (rect 0 0 82 23)(font "Intel Clear" (font_size 8)))
+		(text "IREG[0..8]" (rect 185 27 267 50)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(port
+		(pt 288 48)
+		(output)
+		(text "IRin" (rect 0 0 31 23)(font "Intel Clear" (font_size 8)))
+		(text "IRin" (rect 236 43 267 66)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 48)(pt 272 48))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "Ain" (rect 0 0 27 23)(font "Intel Clear" (font_size 8)))
+		(text "Ain" (rect 240 59 267 82)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 64)(pt 272 64))
+	)
+	(port
+		(pt 288 80)
+		(output)
+		(text "Gin" (rect 0 0 28 23)(font "Intel Clear" (font_size 8)))
+		(text "Gin" (rect 239 75 267 98)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 80)(pt 272 80))
+	)
+	(port
+		(pt 288 96)
+		(output)
+		(text "Dout" (rect 0 0 41 23)(font "Intel Clear" (font_size 8)))
+		(text "Dout" (rect 226 91 267 114)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 96)(pt 272 96))
+	)
+	(port
+		(pt 288 112)
+		(output)
+		(text "Rin[0..7]" (rect 0 0 69 23)(font "Intel Clear" (font_size 8)))
+		(text "Rin[0..7]" (rect 198 107 267 130)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 112)(pt 272 112)(line_width 3))
+	)
+	(port
+		(pt 288 128)
+		(output)
+		(text "Gout" (rect 0 0 41 23)(font "Intel Clear" (font_size 8)))
+		(text "Gout" (rect 226 123 267 146)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 128)(pt 272 128))
+	)
+	(port
+		(pt 288 144)
+		(output)
+		(text "Rout[0..7]" (rect 0 0 82 23)(font "Intel Clear" (font_size 8)))
+		(text "Rout[0..7]" (rect 185 139 267 162)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 144)(pt 272 144)(line_width 3))
+	)
+	(port
+		(pt 288 160)
+		(output)
+		(text "Done" (rect 0 0 44 23)(font "Intel Clear" (font_size 8)))
+		(text "Done" (rect 223 155 267 178)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 160)(pt 272 160))
+	)
+	(port
+		(pt 288 176)
+		(output)
+		(text "TStep_Q[1..0]" (rect 0 0 119 23)(font "Intel Clear" (font_size 8)))
+		(text "TStep_Q[1..0]" (rect 148 171 267 194)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 176)(pt 272 176)(line_width 3))
+	)
+	(port
+		(pt 288 192)
+		(output)
+		(text "BUSWIRES[15..0]" (rect 0 0 147 23)(font "Intel Clear" (font_size 8)))
+		(text "BUSWIRES[15..0]" (rect 120 187 267 210)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 192)(pt 272 192)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 208))
+	)
+)
